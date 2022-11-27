@@ -9,10 +9,12 @@
     <title>IMC</title>
 </head>
 <body>
-    <h1>Calculando o seu IMC</h1>
-        Digite o seu peso: <input type="number" name="peso" id="peso"> <br>
-        Digite a sua altura: <input type="number" name="altura" id="altura"> <br>
-    <button type="button" id="calc" onclick="calcularIMC()">Calcular IMC</button>
+    <div id="dados">
+        <h1>Calculadora de IMC</h1>
+            <p id="p_peso">Peso:</p> <input type="number" name="peso" id="peso" placeholder="Exemplo: 70.5"> <br>
+            <div id="padding"></div>
+            <p id="p_altura">Altura:</p> <input type="number" name="altura" id="altura" placeholder="Exemplo: 1.75"> <br>
+        <div id="button"><button type="button" id="calc" onclick="calcularIMC()">CALCULAR</button></div>
     <div id="res"></div>
     <div id="grau"></div>
 </body>

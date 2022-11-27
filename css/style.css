@@ -14,32 +14,54 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, #265C4B, #146551, #007566, #589A8D, #8FC1B5);
     background-repeat: no-repeat;
     color: #fff;
     height: 100vh;
+    background-color: #030313;
+}
+
+div#dados {
+    margin: auto;
+    padding: 50px;
+    height: 500px;
+}
+
+input#peso {
+    width: 400px;
+}
+
+input#altura {
+    width: 400px;
+}
+
+div#padding {
+    padding-bottom: 20px;
 }
 
 body h1 {
     padding: 20px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 input {
-    padding: 5px;
-    border-radius: 10px;
-    width: 200px;
+    padding: 8px;
     border: 1px solid black;
 }
 
 button {
     margin-top: 25px;
     padding: 12px;
-    border-radius: 15px;
     border: none;
     cursor: pointer;
-    background: #103129;
+    background: red;
     color: #fff;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+div#button {
+    text-align: center;
 }
 
 button:hover {
@@ -47,6 +69,28 @@ button:hover {
     transition: 0.2s;
 }
 
-div#res {
-    padding-top: 20px;
+
+@media (max-width: 1024px) {
+    body {
+        overflow: hidden;
+        height: 90vh;
+    }
+
+    div#dados {
+        padding: 40px;
+    }
+
+    button {
+        margin-bottom: 50px;
+    }
+
+    input#peso {
+        width: 300px;
+    }
+    
+    input#altura {
+        width: 300px;
+    }
+    
+    
 }
